@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    *{
+        margin: 0;
+    }
+    #para{
+      background-color: blue;
+      color: white;
+      padding: 20px;
+      text-align: justify;
+    }
+    #btn{
+
+        background-color: navy;
+        color: white;
+        width:100%;
+        border:none;
+         padding: 10px;
+         margin-bottom: 10px;
+    }
+    .center{
+            width:80%;
+            height:50%;
+    }
+
+ </style>
+
+<body>
+    <div class="center">
+    <button id="btn" onclick="fun()">Change</button>
+    <p id="para">
+                This is Yogi This is YogiThis is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, ad?
+                Repudiandae a, ad voluptatem officia incidunt vitae reprehenderit
+                vero nam ut eveniet hic quasi nobis voluptate, consequuntur 
+                ex ducimus magnam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, fuga! Eos totam, voluptatem, unde accusantium dolorem voluptatum expedita consequatur sequi est itaque iste nesciunt rerum ipsam vero similique placeat soluta.
+                Consectetur error deleniti, dolorum modi fugit explicabo dolor labore sed blanditiis quasi, alias accusantium. Nam dolor nulla pariatur, minus tempora eum quos quo, officia labore, unde hic excepturi iusto a?
+                Eius itaque doloribus ut? Incidunt sed ad blanditiis nisi enim aspernatur repellat, autem doloremque sapiente consectetur explicabo nemo cumque harum neque consequuntur tempore quisquam totam eaque facilis, quaerat aliquam exercitationem!
+                At mollitia molestias labore nihil esse quae ex! Ratione tenetur aliquam adipisci numquam accusantium ipsam ad est necessitatibus excepturi non labore, eos sequi fugit veritatis? Dignissimos aliquam commodi asperiores obcaecati?
+                Alias laudantium, nostrum earum itaque distinctio vel accusantium et commodi aperiam. Fugiat fugit quidem laudantium ipsa eveniet quis nostrum, quos voluptate alias ab, deserunt possimus similique vitae non temporibus quisquam.
+    </p>
+      </div>
+      <script>
+         var text=`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, fuga! Eos totam, voluptatem, unde accusantium dolorem voluptatum expedita consequatur sequi est itaque iste nesciunt rerum ipsam vero similique placeat soluta.
+                Consectetur error deleniti, dolorum modi fugit explicabo dolor labore sed blanditiis quasi, alias accusantium. Nam dolor nulla pariatur, minus tempora eum quos quo, officia labore, unde hic excepturi iusto a?
+                Eius itaque doloribus ut? Incidunt sed ad blanditiis nisi enim aspernatur repellat, autem doloremque sapiente consectetur explicabo nemo cumque harum neque consequuntur tempore quisquam totam eaque facilis, quaerat aliquam exercitationem!
+                At mollitia molestias labore nihil esse quae ex! Ratione tenetur aliquam adipisci numquam accusantium ipsam ad est necessitatibus excepturi non labore, eos sequi fugit veritatis? Dignissimos aliquam commodi asperiores obcaecati?`
+          
+          var text2=`This is Yogi This is YogiThis is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                This is Yogi This is Yogi This is Yogi This is Yogi
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, ad?
+                Repudiandae a, ad voluptatem officia incidunt vitae reprehenderit
+                vero nam ut eveniet hic quasi nobis voluptate, consequuntur 
+                ex ducimus magnam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, fuga! Eos totam, voluptatem, unde accusantium dolorem voluptatum expedita consequatur sequi est itaque iste nesciunt rerum ipsam vero similique placeat soluta.
+                Consectetur error deleniti, dolorum modi fugit explicabo dolor labore sed blanditiis quasi, alias accusantium. Nam dolor nulla pariatur, minus tempora eum quos quo, officia labore, unde hic excepturi iusto a?
+                Eius itaque doloribus ut? Incidunt sed ad blanditiis nisi enim aspernatur repellat, autem doloremque sapiente consectetur explicabo nemo cumque harum neque consequuntur tempore quisquam totam eaque facilis, quaerat aliquam exercitationem!
+                At mollitia molestias labore nihil esse quae ex! Ratione tenetur aliquam adipisci numquam accusantium ipsam ad est necessitatibus excepturi non labore, eos sequi fugit veritatis? Dignissimos aliquam commodi asperiores obcaecati?
+                Alias laudantium, nostrum earum itaque distinctio vel accusantium et commodi aperiam. Fugiat fugit quidem laudantium ipsa eveniet quis nostrum, quos voluptate alias ab, deserunt possimus similique vitae non temporibus quisquam.
+    `      
+            var para=document.getElementById("para")
+              var btn=document.getElementById("btn")
+        function fun(){
+              if(btn.innerHTML==='Change'){
+                btn.innerHTML="Reset"
+                btn.style.backgroundColor='Yellow'
+                 para.innerHTML=text
+                 para.style.backgroundColor='green'
+              }else{
+                  btn.innerHTML="Change"
+                    para.innerHTML=text2
+                    para.style.backgroundColor='Red'
+                    btn.style.backgroundColor='cyan'
+              }
+             
+                
+        }
+         
+      </script>
+</body>
+</html>
